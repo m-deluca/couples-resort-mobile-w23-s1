@@ -36,3 +36,48 @@ input, textarea {
 .hidden {
     display: none;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #626262;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: solid 1px #333;
+}
+
+/* 2. ---Grid---*/
+
+.grid {
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: repeat(4, 50px);
+    grid-column-gap: 30px;
+}
+
+/* 3.---Header--- */
+
+#main-nav {
+    grid-column: 1/-1;
+}
+
+#main-nav label img {
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#main-nav input {
+    display: none;
+}
